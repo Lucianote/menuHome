@@ -1,0 +1,61 @@
+ export default function Home(){
+    const x = 1
+
+    if(x==2){
+        return(
+        <div>
+            <p>Hola</p>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARkAAAC0CAMAAACXO6ihAAAAP1BMVEUqIPP///8AAACcnJz9/f8AAPIfEvN9efbg4P2goKBgYGD///37/f9xbPXe3fx8ePd4dPYNAPempPlzcPbp6P1tVZ0YAAABzklEQVR4nO3SbUpCYRRGUc20rlb2Nf+xJoV0IXfcfwrvWmcCh82zuuOy1bUfuFnKFGWKMuWnzH7acDbtZ2WmNb+mWZnNtZ+5KRtlgjJFmVJlDt83stzMYewu/21mbTO1mcFXU2We7oezsMzzdjgvy8ocd6vBbB+VuUyZokxRpihTlCnKFGWKMkWZokxRpihTlCnKFGWKMkWZokxRpihTlCnKFGWKMkWZokxRpihTlCnKFGWKMkWZokxRpihTlCnKFGWKMkWZokxRpihTlCnKFGWKMkWZokxRpihTlCnKFGWKMkWZokxRpihTlCnKFGWKMkWZokxRpihTlCnKFGWKMkWZokxRpihTlCnKFGWKMkWZokxRpihTlCnKFGWKMkWZokxRpihTlCnKFGWKMkWZokxRpihTlCnKFGWKMkWZokxRpihTlCnKFGWKMkWZokxRpihTlCnKFGWKMkWZokxRpihTlCnKFGWKMkWZokxRpihTlCnKFGWKMkWZokxRpihTlCnKlKVlXt92g1la5v314fgwlI/PZWXWh9MNrcqcshzGTpObUabLDE6ZokxRpihTlCnKlHmZ6drP3JRpVmY/bTib9rMy/KVMUaYoU5QpX2bwenju+J+qAAAAAElFTkSuQmCC"></img>
+        </div>
+        )
+    }
+    if(x==1){
+        return(
+            <div>
+                <p>Hola</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRIBqUOC1g9134pcMe1tvwQvJb5IRa035-3A&usqp=CAU"></img>
+            </div>
+            )
+    }
+    console.log("Hola mundo ")
+
+}
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------
+
+stock
+
+
+
+
+export default function Home(){
+    let x = 10
+    let y = 1
+    console.log("Hola mundo ")
+
+    function restar(){
+        let z 
+        z= x--
+        console.log(z)
+        if(z <= 0){
+            console.log("no hay stock")
+            x= 0
+        }
+    }
+    return(
+        <div>
+        <div>{x}</div>
+        <button onClick={restar}>Restar</button>
+        </div>
+    )
+
+}
